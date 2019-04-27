@@ -35,7 +35,7 @@ class AddCategory  extends Component {
         let url = Api.baseURL + Api.PutDeleteGetProduct + this.props.product.id ;
         console.log(url);
         axios.put(url,product).then(res => {
-          //document.location.reload();
+          document.location.reload();
          }).catch(error => {
            console.log(error);
          })
